@@ -1,0 +1,678 @@
+/* Setting Body Params */
+body
+{
+ margin: 0;
+}
+
+      /* ---------- */
+/* Pre-Authenticated Layout */
+      /* ---------- */
+
+/* Container Styling */
+.Floating-Container
+{
+  height: auto;
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+  text-align: center;
+  border: 3px solid rgba(0,0,0,.3);
+  background-color: #dddddd;
+  font-family: Georgia;
+}
+
+/* Floating Logo Sizing */
+#Floating-Logo
+{
+  height: 285px;
+  width: 285px;
+}
+
+/* Floating Fieldset Style */
+.Floating-Fieldset
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-color: #bba464;
+  border-radius: 4%;
+}
+
+/* Floating Header Styling */
+.Floating-Header
+{
+  font-size: 22px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+/* Floating Label Styling */
+.Floating-Label
+{
+  float: left;
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+/* Floating Input Styling */
+.Floating-Input
+{
+  width: 80%;
+  height: 40px;
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  border: 2px solid rgba(0,0,0,.3);
+  border-radius: 3%;
+}
+
+/* Floating Input when Focused Styling */
+.Floating-Input:focus
+{
+  outline: none;
+  box-shadow: 0 0 3pt 2pt rgb(187,164,100);
+  background-color: #999;
+  color: white;
+}
+
+/* Floating Input Placeholder Styling */
+.Floating-Input:focus::placeholder
+{
+  color: white;
+}
+
+/* Floating Button Stlying */
+.Floating-Button
+{
+  width: 70%;
+  height: 40px;
+  background-color: #999;
+  color: white;
+  border: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Floating Button on Hover */
+.Floating-Button:hover
+{
+  background-color: #bba464;
+  cursor: pointer;
+}
+
+/* Floating Paragraph Styling */
+.Floating-P
+{
+  font-size: 18px;
+  font-weight: bold;
+  fong-family: Georgia;
+}
+
+/* Floating Link Styling */
+.Floating-Link
+{
+  text-decoration: none;
+  color: #bba464;
+}
+
+/* Floating Link on Hover Styling */
+.Floating-Link:hover
+{
+  text-decoration: underline;
+  text-shadow: 0px 1px 1px #999;
+}
+
+ /* ---------- */
+/* House Layout */
+ /* ---------- */
+
+/* Nav Bar Logo Sizing*/
+#Nav-Logo
+{
+  width: 100%;
+  height: 23%;
+}
+
+/* Nav Bar Styling */
+.Nav-Bar
+{
+  list-style-type: none;
+  background-color: #dddddd;
+  margin: 0px;
+  padding: 0px;
+  width: 12%;
+  height: 100%;
+  position: fixed;
+  overflow: auto;
+  text-decoration: none;
+}
+
+/* Nav Img Container */
+.Nav-Img
+{
+  text-align: center;
+  display: block;
+  width: 100%;
+  background-color: #dddddd;
+}
+
+/* Nave Home Styling */
+.Nav-Home
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #8f7d4d;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: inherit;
+}
+
+/* Nav Home Hover Styling */
+.Nav-Home:hover
+{
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav Active Styling */
+.Nav-active
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  background-color: #bba464;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Nav Header Styling */
+.Nav-Header
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #999;
+  color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: inherit;
+}
+
+/* Nav Value Styling */
+.Nav-Value
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #dddddd;
+  color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: inherit;
+}
+
+/* Nav Value on hover Styling */
+.Nav-Value:hover
+{
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav Spacer Sizing */
+.Nav-Spacer
+{
+  height: 300px;
+}
+
+/* Nav Profile Styling */
+.Nav-Profile
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #dddddd;
+  color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: inherit;
+}
+
+/* Nav Profile on hover Styling */
+.Nav-Profile:hover
+{
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+}
+
+/* Nav Profile Active Styling */
+.Nav-ProfileActive
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #bba464;
+  color: white;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+/* Nav Logout Styling */
+.Nav-Logout
+{
+  text-align: center;
+  font-family: Georgia;
+  font-size: 22px;
+  display: block;
+  width: 100%;
+  background-color: #dddddd;
+  color: black;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  text-decoration: inherit;
+}
+
+/* Nav Logout on hover Styling */
+.Nav-Logout:hover
+{
+  background-color: #b52218;
+  color: white;
+  cursor: pointer;
+}
+
+/* Header Div Params */
+.Div-Header
+{
+  margin-left: 12%;
+  height: 13%;
+  background-color: #999;
+  margin-bottom: 0px;
+}
+
+/* Page Header Styling */
+.Page-Header
+{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 105px;
+    color: #bba464;
+    text-align: center;
+    margin-bottom: 0px
+}
+
+/* Body Div Params */
+.Div-Body
+{
+  margin-left: 12%;
+  min-height: 80%;
+  height: auto;
+}
+
+/* Body Container Styling */
+.Body-Container
+{
+  margin-top: 3%;
+  width: 80%;
+  min-height: 80%;
+  height: auto;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-color: #dddddd;
+  text-align: center;
+  padding-top: 1%;
+}
+
+/* Header Styling */
+.Body-Header
+{
+  font-size: 58px;
+}
+
+/* SubHeader Styling */
+.Body-SubHeader
+{
+  font-size: 35px;
+}
+
+/* Body Paragraph Styling */
+.Body-Para
+{
+  max-width: 80%;
+  margin-left: 10%;
+  font-size: 24px;
+}
+
+/* Body Paragraph Alt Styling */
+.Body-Para-Alt
+{
+  max-width: 80%;
+  margin-left: 10%;
+  text-align: left;
+  font-size: 24px;
+}
+
+/* Link Styling */
+.Body-Link
+{
+  margin-left: 4%;
+  font-size: 30px;
+  color: Black;
+  text-align: left;
+  text-decoration: none;
+}
+
+/* Link Styling on Hover */
+.Body-Link:hover
+{
+  color: #bba464;
+  cursor: pointer;
+}
+
+/* Fieldset Style */
+.Fieldset
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  border: 2px solid;
+  border-color: #bba464;
+  border-radius: 0%;
+}
+
+/* Floating Button Stlying */
+.Fieldset-Button
+{
+  width: 30%;
+  height: 40px;
+  margin-left: 2%;
+  margin-right: 2%;
+  background-color: #999;
+  color: white;
+  border: 0px;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+}
+
+/* Fieldset Button on Hover */
+.Fieldset-Button:hover
+{
+  background-color: #bba464;
+  cursor: pointer;
+}
+
+/* Fieldset Label Styling */
+.Fieldset-Label
+{
+  float: left;
+  margin-left: 10%;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+/* Fieldset Input Styling */
+.Fieldset-Input
+{
+  width: 80%;
+  height: 40px;
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 15px;
+  font-style: oblique;
+  font-weight: bold;
+  border: 2px solid rgba(0,0,0,.3);
+  border-radius: 3%;
+}
+
+/* Fieldset Input when Focused Styling */
+.Fieldset-Input:focus
+{
+  outline: none;
+  box-shadow: 0 0 3pt 2pt rgb(187,164,100);
+  background-color: #999;
+  color: white;
+}
+
+/* Fieldset Input Placeholder Styling */
+.Fieldset-Input:focus::placeholder
+{
+  color: white;
+}
+
+/* Table Styling */
+.tbl
+{
+  text-align: center;
+  width: 70%;
+  margin-left: 15%;
+  border: none;
+}
+
+/* Styling for the table header */
+.tbl-header
+{
+  background-color: #bba464;
+  height: 35px;
+}
+
+/* Styling for every row in the table */
+.tbl-r
+{
+  background-color: #999;
+}
+
+/* Styling for the accent rows in the table */
+.tbl-r-accent
+{
+  background-color: #dddddd;
+}
+
+/* Styling for the Quiz Container */
+.quiz-Container
+{
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 30px;
+  height: 500px;
+  border: 2px solid;
+  border-color: #bba464;
+  border-radius: 0%;
+}
+
+/* Quiz Start Button Style */
+.quiz-Button
+{
+  margin-top: 165px;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  width: 40%;
+  background-color: #999;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  border: none;
+  outline: none;
+}
+
+/* Quiz Start Button Stlye on Hover */
+.quiz-button:hover
+{
+  background-color: #bba464;
+  cursor: pointer;
+}
+
+/* Quiz Question Stlying */
+.quiz-question
+{
+  margin-top: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 80%;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  font-style: oblique;
+  color: white;
+  background-color: #999;
+}
+
+/* Quiz option container styling */
+.quiz-option-cont
+{
+  margin-top: 50px;
+  height: 200px;
+  width: 100%;
+  text-align: left;
+}
+
+/* Quiz option select styling */
+.quiz-option
+{
+  display: inline-block;
+  margin-left: 6.4%;
+  margin-right: 0px;
+  padding-top: 10px;
+  border: solid 4px;
+  border-radius: 3%;
+  height: 100%;
+  width: 16%;
+  text-align: center;
+  font-size: 18px;
+  font-family: Arial;
+  font-weight: bold;
+  border-color: #555;
+}
+
+/* Quiz option select styling on hover */
+.quiz-option:hover
+{
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  border-color: #555;
+}
+
+/* Quiz Timer Styling */
+.quiz-timer
+{
+  font-size: 25px;
+}
+
+/* Quiz Timer Bar styling */
+.quiz-timer-case
+{
+  width: 200px;
+  margin-left: 40.4%;
+  background-color: #999;
+  border: solid 3px;
+  border-color: #555;
+  border-radius: 3%;
+  color: #999;
+}
+
+.quiz-timer-Bar
+{
+  text-align: left;
+  color: #bba464;
+  background-color: #bba464;
+}
+
+
+/* ---------- */
+ /* Messages */
+/* ---------- */
+
+/* The Alert message box */
+.alert
+{
+  padding: 20px;
+  background-color: #f5bc11;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* The SuccessAlert message box */
+.SuccessAlert
+{
+  padding: 20px;
+  background-color: #40d102;
+  color: white;
+  margin-bottom: 15px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+/* The close button */
+.closebtn
+{
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* When moving the mouse over the close button */
+.closebtn:hover
+{
+  color: black;
+}
+
+
+/* ---------- */
+  /* Generic */
+/* ---------- */
+
+/* makes a tag inherit all styles */
+.passive
+{
+  text-decoration: inherit;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+}
+
+/* Makes a tag hidden */
+.hidden
+{
+  display: none;
+}

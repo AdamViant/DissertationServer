@@ -1,0 +1,83 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a href="/index" class="Nav-Home">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Value">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Active">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a href="/htmlquiz" class="Nav-Value">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Guides</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("../../partials/messages") %>
+
+      <h1 class="Body-Header">Fonts in CSS</h1>
+
+      <h2 class="Body-Subheader">How to Modify Fonts in CSS</h2>
+      <div class="Body-Para">
+        <p>
+        Using CSS you can freely modify and change the appearance of a HTML page this also includes the text fonts within the HTML page.
+        Using the Selectors found in the previous guide you can also make your changes precise to allow for even more combinations of
+        modifications to words and characters within a paragraph.
+        <br /><br /><br />
+        Fonts:
+        <br /><br />
+        Fonts are broken up into two parts within CSS Font Name and Font Family these are both changed at once using the same paramter in CSS.
+        This Parameter is the "Font-Family" paramter, and is used in the example below. The first insert into the Font-family paramter is the Font Name,
+        this is used to specifiy the specific font you would like to use, the second part is the font family and is used to specifiy which family the font is from.
+        <br /><br />
+        <img src="views/resources/images/FontFamily.png">
+        <br /><br />
+        Font Size:
+        <br /><br />
+        Font size is the size of the text on screen and can be modified using the "font-size" paramater in CSS. The font-size paramter is used as follows and
+        most commonly uses pixels as the method of measurement for the size of the font, pixels are meassured using "px".
+        <br /><br />
+        <img src="views/resources/images/ElementSelector.png">
+        <br /><br />
+        Font Colour:
+        <br /><br />
+        Font Colour is the colour of the text displayed and can easily be modified using the "colour" parameter in CSS. The colour paramter is used as follows and accepts
+        most colours by name but can also accept colours through HEX and RGB values.
+        <br /><br />
+        <img src="views/resources/images/FontColour.png"
+        </p>
+
+      </div>
+
+    <br /><br /><br /><br />
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title>Register</title>
+
+  <!-- Import resources -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+
+</head>
+
+<body>
+
+  <div class="Floating-Container">
+    <img id="Floating-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo">
+
+    <!-- Messages -->
+    <%- include ("./partials/messages") %>
+
+    <fieldset class="Floating-Fieldset">
+    <legend class="Floating-Header">Register</legend>
+
+    <!-- Register Form -->
+    <form action="/register" method="POST">
+    </br>
+      <label class="Floating-Label" for="username">Username:</label>
+      </br>
+      <input class= "Floating-Input" type="text" name="username"
+        placeholder="Enter Username" value="<%= typeof username != 'undefined' ? username : '' %>">
+      </br></br>
+      <label class="Floating-Label" for="password">Password:</label>
+      </br>
+      <input class= "Floating-Input" type="password" name="password"
+        placeholder="Enter Password" value="<%= typeof password!= 'undefined' ? password : '' %>">
+      </br></br>
+      <label class="Floating-Label" class="Floating-Label" for="password">Confirm Password:</label>
+      </br>
+      <input class= "Floating-Input" type="password" name="password2"
+        placeholder="Confirm Password" value="<%= typeof password2 != 'undefined' ? password2 : '' %>">
+      </br></br>
+      <label class="Floating-Label" class="Floating-Label" for="password">Email:</label>
+      </br>
+      <input class= "Floating-Input" type="text" name="email"
+        placeholder="Enter Email" value="<%= typeof email != 'undefined' ? email : '' %>">
+      </br></br>
+      <button class="Floating-Button" >Submit</button>
+    </form>
+
+  <p class="Floating-P">Have an Account? <a href="/Login" class="Floating-Link">Login</a></p>
+  </fieldset>
+  </div>
+
+</body>
+</html>

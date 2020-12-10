@@ -1,0 +1,73 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a href="/index" class="Nav-Home">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Value">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Active">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a href="/htmlquiz" class="Nav-Value">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Guides</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("../../partials/messages") %>
+
+      <h1 class="Body-Header">Introduction to CSS </h1>
+
+      <h2 class="Body-Subheader">What is CSS?</h2>
+      <div class="Body-Para">
+        <p>
+        CSS stands for Cascading Style Sheets, CSS is used to design and style HTML elements and decribe how they are supposed
+        to appear on the screen. CSS can be used to style multiple pages at once saving alot of work in creating and maintaining
+        house styles on HTML pages.
+        <br /><br />
+        There are three ways to input CSS into a HTML document the first is to create a external CSS page and link it into the HTML as follows.
+        <br /><br />
+        <img src="views/resources/images/LinkStylesheet.png">
+        <br /><br />
+        The second way is write CSS into a HTML document directly, this can be done between two script tags as follows.
+        <br /><br />
+        <img src="views/resources/images/InternalCSS.png">
+        <br /><br />
+        The final way to write CSS is to input it directly into the HTML element itself, this can be done as follows.
+        <br /><br />
+        <img src="views/resources/images/InlineCSS.png">
+        </p>
+
+      </div>
+
+    <br /><br /><br /><br />
+    </div>
+  </div>
+
+</body>
+</html>

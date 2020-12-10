@@ -1,0 +1,62 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a class="Nav-Active">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Value">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Value">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a href="/htmlquiz" class="Nav-Value">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Home Page</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("./partials/messages") %>
+
+      <h2 class="Body-Header"> Want to Learn HTML?</h2>
+      <p class="Body-Para">
+        Want to learn the basics of HTML then feel free to head on over to our HTML basics guide <a href="/htmlbasics">Here</a>. </br>
+        Also if your interested in learing how to use css alongside your HTML you can learn the basics using our CSS basics Guide
+        <a href="/cssbasics">Here</a>.
+      </p>
+
+    </br></br></br>
+
+      <h2 class="Body-Header"> Want to Test Your Knowledge?</h2>
+      <p class="Body-Para">
+        Want to test your knowledge of HTML of and CSS why not try our respective quizes <a href="/htmlquiz">Here</a> and <a href="/cssquiz">Here</a>.
+      </p>
+
+    </div>
+  </div>
+
+</body>
+</html>

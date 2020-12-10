@@ -1,0 +1,46 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title>Login</title>
+
+  <!-- import resources -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+
+</head>
+
+<body>
+
+  <div class="Floating-Container">
+    <img id="Floating-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo">
+
+    <!-- Messages -->
+    <%- include ("./partials/messages") %>
+
+    <fieldset class="Floating-Fieldset">
+    <legend class="Floating-Header">Log In</legend>
+
+    <!-- Log In Form -->
+    <form action="/login" method="POST">
+      </br>
+        <label class="Floating-Label" for="username">Username:</label>
+        </br>
+        <input class= "Floating-Input" type="text" name="username"
+            placeholder="Enter Username" value="<% typeof username != 'undefined' ? username : '' %>">
+        </br></br>
+        <label class="Floating-Label" for="password">Password:</label>
+        </br>
+        <input class="Floating-Input" type="password" name="password"
+            placeholder="Enter Password" value="<% typeof password != 'undefined' ? password : '' %>">
+        </br></br>
+        <button class="Floating-Button">Login</button>
+    </form>
+
+  <p class="Floating-P">Need an Account? <a href="/register" class="Floating-Link">Register</a></p>
+  </fieldset>
+  </div>
+
+</body>
+</html>

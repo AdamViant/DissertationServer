@@ -1,0 +1,85 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a href="/index" class="Nav-Home">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Value">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Value">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a class="Nav-Active">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Quizes</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("../partials/messages") %>
+
+      <h1 id="header">HTML Quiz</h1>
+
+      </br></br>
+
+      <div class="quiz-Container">
+
+        <div id="start" class="quiz-button">Start Quiz!</div>
+        <div id="quiz" style="display: none;">
+          <div id="question" class="quiz-question"><p>Question</p></div>
+          <div id="choices" class="quiz-option-cont">
+            <div class="quiz-option" id="A" onclick="checkAnswer('A')">A</div>
+            <div class="quiz-option" id="B" onclick="checkAnswer('B')">B</div>
+            <div class="quiz-option" id="C" onclick="checkAnswer('C')">C</div>
+            <div class="quiz-option" id="D" onclick="checkAnswer('D')">D</div>
+          </div>
+        </br></br></br>
+          <div id="timer">
+            <div id="counter" class="quiz-timer">6</div>
+            <div id="btimeGauge" class="quiz-timer-case"><div id="timeGauge" class="quiz-timer-bar">.</div></div>
+          </div>
+        </div>
+        <div id="scoreContainer" style="display: none;">
+          <h1 id="messageOutput"></h1>
+        </br></br></br>
+          <h3 id="scoreOutput"></h3>
+        <form action="/SubmitQuizScore" method="POST">
+          <input id="submitQuiz" class= "hidden" type="text" name="selectedQuiz">
+          <input id="submitScore" class= "hidden" type="text" name="score">
+          <button class="quiz-button" >Submit</button>
+        </form>
+        </div>
+
+    </div>
+
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="views/resources/scripts/quiz.js"></script>
+
+</body>
+</html>

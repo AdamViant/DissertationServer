@@ -1,0 +1,78 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a href="/index" class="Nav-Home">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Active">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Value">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a href="/htmlquiz" class="Nav-Value">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Guides</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("../../partials/messages") %>
+
+      <h1 class="Body-Header">Introduction to HTML</h1>
+
+      <h2 class="Body-Subheader">What is HTML?</h2>
+      <div class="Body-Para">
+        <p>
+        HTML stands for Hyper Text Markup Language, and is used to create web pages. HTML is used to describe the structure of web page through the use of Elements.
+        Each element tells the browser how to display the content contained within the element and does this by labeling the content such as "This is a Heading" or
+        "This is an Image".
+        </p>
+      </div>
+
+      <br /><br />
+      <h2 class="Body-Subheader">An Example of an HTML document</h2>
+      <br />
+      <img src="views/resources/images/BasicHtml.png">
+      <br /><br />
+
+      <h2 class="Body-Subheader">Example Explained</h2>
+      <div class="Body-Para-Alt">
+        <ul>
+          <li>The "< !DOCTYPE html >" Element defines that the document is a HTML 5 Document.</Li>
+          <li>The "< html >" element is the root element of a HTML page.</Li>
+          <li>The "< head >" element signifies the contests of the Header of a Page.</Li>
+          <li>The "< title >" element signifies the Title of the Page.</Li>
+          <li>The "< body >" element signifies the contents of the Body of a Page.</Li>
+        </ul>
+      </div>
+
+
+    <br /><br /><br /><br />
+    </div>
+  </div>
+
+</body>
+</html>

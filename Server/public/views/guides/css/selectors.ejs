@@ -1,0 +1,76 @@
+<DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.8/angular-route.js"></script>
+  <link rel="stylesheet" type="text/css" href="views/resources/style.css"></link>
+</head>
+
+<body>
+
+  <!-- Nav Bar -->
+  <ul class="Nav-Bar">
+    <li><img id="Nav-Logo" src="views/resources/images/Code.Scribe.png" alt="Code.Scribe Logo"></li>
+    <li><a href="/index" class="Nav-Home">Home</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">HTML Guides</a></li>
+    <li><a href="/htmlbasics" class="Nav-Value">HMTL Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">CSS Guides</a></li>
+    <li><a href="/cssbasics" class="Nav-Active">CSS Basics</a></li>
+    <li class="New-Value"><br /><br /></li>
+    <li><a class="Nav-Header">Quizes</a></li>
+    <li><a href="/htmlquiz" class="Nav-Value">Html Quizes</a></li>
+    <li><a href="/cssquiz" class="Nav-Value">CSS Quizes</a></li>
+    <li class="Nav-Spacer"></li>
+    <li><a href="/profile" class="Nav-Profile">Profile</a></li>
+    <li><a href="/logout" class="Nav-Logout">Log-Out</a></li>
+  </ul>
+
+  <!-- Header -->
+  <div class="Div-Header">
+    <h1 class="Page-Header">Guides</h1>
+  </div>
+
+  <!-- Body -->
+  <div class="Div-Body">
+    <div class="Body-Container">
+
+      <!-- Messages -->
+      <%- include ("../../partials/messages") %>
+
+      <h1 class="Body-Header">CSS Selectors</h1>
+
+      <h2 class="Body-Subheader">What are Selectors in CSS?</h2>
+      <div class="Body-Para">
+        <p>
+        In CSS you use selectors to choose what elements in the HTML you would like to modify and change, in this guide we will cover the three
+        most basic ways to use selectors in CSS.
+        <br /><br /><br />
+        The first and most basic way to use selectors in CSS is to select an element in HTML for example the "< p >" element in the following example.
+        By doing this the CSS will be applied to all "< p >" elements within the associated HTML.
+        <br /><br />
+        <img src="views/resources/images/ElementSelector.png">
+        <br /><br />
+        The second and more precise way to select elements in HTML to be modified by the CSS is to only modify elements with the specified class.
+        In the example below the class selected is "Highlight" so anything in the corresponding HTML document with the line "class="Highlight"" within the element
+        will be modified by the CSS. This is done by putting a "." before the selected term.
+        <br /><br />
+        <img src="views/resources/images/ClassSelector.png">
+        <br /><br />
+        Another way similar to the Class selector above would be to select elements by there ID and much like class selector requires you to put a
+        "#" infront of your selected term. In the example below the selected term is "Dark" so any HTML element with the line "ID="Dark"" within its element will be modified.
+        <br /><br />
+        <img src="views/resources/images/IDSelector.png">
+        </p>
+
+      </div>
+
+    <br /><br /><br /><br />
+    </div>
+  </div>
+
+</body>
+</html>
