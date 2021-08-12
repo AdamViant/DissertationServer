@@ -15,6 +15,7 @@ var { ensureAuthenticated } = require('./config/auth');
 //Import Models & Schema's
 var User = require("./models/User");
 var Score = require("./models/Score");
+var Quiz = require("./models/Quiz");
 
 //initialize App
 var app = express();
@@ -96,7 +97,7 @@ app.get("/profileEdit", ensureAuthenticated, (req, res) =>
   })
 );
 
-//Profile-Edit
+//Profile-Edit-Undo
 app.get("/profileEditUndo", ensureAuthenticated, (req, res) =>
 {
   req.flash('success_msg', 'No Changes where saved.')
@@ -212,11 +213,44 @@ app.get("/htmlQuiz", ensureAuthenticated, (req, res) => {
 });
 
 // HTML Quiz Run
-app.get("/htmlQuizRun", ensureAuthenticated, (req, res) =>
-  res.render("quizes/htmlquiz", {
-    user: req.user
-  })
-);
+app.get("/htmlQuizRun", ensureAuthenticated, (req, res) => {
+  var currentQuiz = 1;
+  var quizName;
+  var Question1 = new Object();
+  var Question2 = new Object();
+  var Question3 = new Object();
+  var Question4 = new Object();
+  var Question5 = new Object();
+
+  Quiz.findOne({quizId: currentQuiz})
+    .then(quiz => {
+      if(quiz) {
+        quizId = quiz.quizId;
+        quizName = quiz.quizName;
+        Question1 = quiz.question1;
+        Question2 = quiz.question2;
+        Question3 = quiz.question3;
+        Question4 = quiz.question4;
+        Question5 = quiz.question5;
+
+        var quizData = new Quiz({
+          quizId: quizId,
+          quizName: quizName,
+          question1: Question1,
+          question2: Question2,
+          question3: Question3,
+          question4: Question4,
+          question5: Question5
+        })
+      }
+
+      //Render page
+      res.render("quizes/htmlquiz", {
+        user: req.user,
+        quiz: quizData
+      })
+    })
+});
 
 // CSS Quiz Landing
 app.get("/cssQuiz", ensureAuthenticated, (req, res) => {
@@ -276,11 +310,44 @@ app.get("/cssQuiz", ensureAuthenticated, (req, res) => {
 });
 
 // CSS Quiz Run
-app.get("/cssQuizRun", ensureAuthenticated, (req, res) =>
-  res.render("quizes/cssquiz", {
-    user: req.user
-  })
-);
+app.get("/cssQuizRun", ensureAuthenticated, (req, res) => {
+  var currentQuiz = 2;
+  var quizName;
+  var Question1 = new Array();
+  var Question2 = new Array();
+  var Question3 = new Array();
+  var Question4 = new Array();
+  var Question5 = new Array();
+
+  Quiz.findOne({quizId: currentQuiz})
+    .then(quiz => {
+      if(quiz) {
+        quizId = quiz.quizId;
+        quizName = quiz.quizName;
+        Question1 = quiz.question1;
+        Question2 = quiz.question2;
+        Question3 = quiz.question3;
+        Question4 = quiz.question4;
+        Question5 = quiz.question5;
+
+        var quizData = new Quiz({
+          quizId: quizId,
+          quizName: quizName,
+          question1: Question1,
+          question2: Question2,
+          question3: Question3,
+          question4: Question4,
+          question5: Question5
+        })
+      }
+
+      //Render page
+      res.render("quizes/cssquiz", {
+        user: req.user,
+        quiz: quizData
+      })
+    })
+});
 
 
 // ==== Functions ====
